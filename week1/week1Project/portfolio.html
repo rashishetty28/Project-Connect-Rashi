@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Rashi</title>
+  <link rel="stylesheet" href="C:\Users\RASHI G SHETTY\OneDrive\Desktop\Project-Connect\portfolio.css" />
+</head>
+<body>
+  <!-- Accessibility: Skip to content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="logo">RASHI</div>
+      <button id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Open or close menu">
+        ☰
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#hero" tabindex="0">Home</a></li>
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="#projects" tabindex="0">Projects</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero" tabindex="-1">
+      <div>
+        <h1>ABOUT ME</h1>
+        <p class="hero-para">Hi 👋 There, I'm</p>
+        <h2>Rashis``</h2>
+        <p class="hero-para">I enjoy designing and coding projects that solve real-world problems, especially those that blend creativity with technology. I’m passionate about building solutions that are practical, user-friendly, and impactful.</p>
+      </div>
+      <div>
+        <img class="hero-img" src="C:\Users\RASHI G SHETTY\OneDrive\Desktop\RASHI\photo.jpg" alt="Profile picture of Rashi"/>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About</h2>
+      <p>
+        A Computer Science Engineering student enthusiastic about building AI and web solutions, skilled in HTML, CSS, JavaScript, and interested in hackathons and innovative project engineering.
+      </p>
+      <ul class="skills-list">
+        <li><strong>HTML:</strong> For website structure.</li>
+        <li><strong>CSS:</strong> Stylish and responsive layouts.</li>
+        <li><strong>JavaScript:</strong> Interactive and dynamic features.</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>ForecastAI</h3>
+          <p>An AI-driven forecasting tool for MSMEs that leverages real-time, local signals to reduce deadstocks and maximize profits.</p>
+          <img src="images/forecastai.jpeg" alt="ForecastAI screenshot">
+        </div>
+        <div class="project-card">
+          <h3>On The Go EV</h3>
+          <p>A sustainable EV model with regenerative braking to enhance efficiency and reduce charging dependency.</p>
+          <img src="images/on-th-go-ev.jpeg" alt="On The Go EV screenshot">
+        </div>
+        <div class="project-card">
+          <h3>Motorized Roller</h3>
+          <p>Wearable shoes featuring brushless motors and wireless controls, reaching speeds up to 15km/h with comfort and safety.</p>
+          <img src="images/motorizedroller.jpeg" alt="Motorized Roller screenshot">
+        </div>
+      </div>
+
+      <!-- Simple Image Gallery Slider (Stretch) -->
+      <div class="gallery-section" aria-label="Project gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-slider" tabindex="0" aria-live="polite">
+          <button class="gallery-btn" id="prev-slide" aria-label="Show previous image">&larr;</button>
+          <img class="gallery-img" id="gallery-image" src="images/forecastai.jpeg" alt="Gallery image 1" />
+          <button class="gallery-btn" id="next-slide" aria-label="Show next image">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <label for="contact-name">Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="contact-name" name="name" placeholder="Enter your name" required aria-required="true" />
+        <span class="error-message" id="name-error"></span>
+
+        <label for="contact-email">Email<span aria-hidden="true">*</span></label>
+        <input type="email" id="contact-email" name="email" placeholder="Enter your email" required aria-required="true" />
+        <span class="error-message" id="email-error"></span>
+
+        <label for="contact-message">Message<span aria-hidden="true">*</span></label>
+        <textarea id="contact-message" name="message" rows="4" placeholder="Enter your message" required aria-required="true"></textarea>
+        <span class="error-message" id="message-error"></span>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Theme Switcher -->
+    <button id="toggle-theme" class="theme-toggle" aria-label="Switch light or dark mode">🌙/☀️</button>
+  </main>
+
+  <script src="C:\Users\RASHI G SHETTY\OneDrive\Desktop\Project-Connect\portfolio.js"></script>
+</body>
+</html>
